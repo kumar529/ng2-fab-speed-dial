@@ -1,0 +1,20 @@
+@import "../../../../style/main.global.scss";
+
+.fab-menu {
+  position: relative;
+
+  ::ng-deep .fab-button {
+    position: absolute;
+    transition-timing-function: ease-out;
+    transition-property: transform;
+  }
+
+  ::ng-deep .fab-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
