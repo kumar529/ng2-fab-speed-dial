@@ -1,12 +1,8 @@
 import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { FormsModule } from "@angular/forms";
 import { FabToggleDirective, FabButtonDirective, FabSpeedDialComponent } from "./fabSpeedDial.component";
 
 @NgModule({
-  imports         : [
-                      CommonModule
-                    ],
+  imports         : [],
   declarations    : [ 
                       FabToggleDirective,
                       FabButtonDirective, 
@@ -19,4 +15,4 @@ import { FabToggleDirective, FabButtonDirective, FabSpeedDialComponent } from ".
                     ]
 })
 
-export class FabSpeedDialModule{}
+export class Ng2FabSpeedDialModule{}
