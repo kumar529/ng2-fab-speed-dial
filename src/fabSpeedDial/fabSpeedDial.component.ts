@@ -29,8 +29,31 @@ export class FabToggleDirective {}
 
 @Component({
   selector: 'fab-speed-dial',
-  templateUrl : './fabSpeedDial.component.html',
-  styleUrls : ['./fabSpeedDial.component.scss']
+  template : `
+    <div class="fab-menu">
+      <ng-content></ng-content>
+    </div>
+  `,
+  styles : [`
+    .fab-menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .fab-menu ::ng-deep .fab-button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition-timing-function: ease-out;
+      transition-property: transform;
+    }
+
+    .fab-menu ::ng-deep .fab-toggle {
+      z-index: 2;
+    }
+  `]
 })
 
 export class FabSpeedDialComponent implements AfterContentInit {

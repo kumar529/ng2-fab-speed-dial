@@ -1,11 +1,11 @@
 {
   "name": "ng2-fab-speed-dial",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.5",
   "author": "Rahul Kumar",
   "description": "Fab speed dial in for Angular 4+",
   "license": "MIT",
   "scripts": {
-    "transpile": "ngc",
+    "transpile": "ngc -p tsconfig.json",
     "package": "rollup -c",
     "minify": "uglifyjs dist/bundles/fabSpeedDial.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/fabSpeedDial.umd.min.js",
     "build": "npm run transpile && npm run package && npm run minify"
