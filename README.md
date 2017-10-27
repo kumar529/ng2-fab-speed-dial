@@ -2,7 +2,7 @@ How to Use
 
 step 1 : run
 ```
-npm i npm i ng2-fab-speed-dial
+npm i ng2-fab-speed-dial
 ```
 step 2
 import Ng2FabSpeedDialModule into your module
