@@ -7,6 +7,7 @@ npm i npm i ng2-fab-speed-dial
 step 2
 import Ng2FabSpeedDialModule into your module
 
+Find Demo [here](https://kumar529.github.io/demoNg2FabSpeedDial/)
 
 Example of usage - 
 
